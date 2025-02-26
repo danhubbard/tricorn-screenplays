@@ -1,0 +1,8 @@
+@theme {
+  --font-family-sans: "Inter", "Inter var", ui-sans-serif, system-ui, sans-serif;
+}
+
+.bg-darker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 58 71/var(--tw-bg-opacity))
+}

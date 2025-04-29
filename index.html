@@ -22,7 +22,8 @@
         <nav>
           <ul class="flex text-xs sm:text-lg space-x-6">
             <li><a href="https://www.tricornbooks.co.uk/services/" class="text-gray-700 hover:text-gray-900">Book Publishing</a></li>
-            <li><a href="#enquiries" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+            <li><a onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})" class="text-gray-700 hover:text-gray-900 cursor-pointer">Workbook</a></li>
+            <li><a onclick="document.getElementById('enquiries').scrollIntoView({behavior: 'smooth'})" class="text-gray-700 hover:text-gray-900 cursor-pointer">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -188,6 +189,33 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="px-4 py-12 sm:py-24 items-center justify-center text-[#3B3A47] bg-neutral-100" id="book">
+        <h2 class="mx-auto max-w-screen-xl text-5xl font-medium mb-8">Learn to adapt your screenplay</h2>
+        <div class="container mx-auto max-w-screen-xl sm:flex gap-8">
+        
+          <div class="sm:w-3/4 prose text-lg mb-8 sm:mb-0">
+            <p class="mx-auto max-w-screen-xl text-2xl font-light mb-12"><span class="font-bold">Screen Ready:</span> A Workbook for
+            Adaptation Writers from Tricorn Books</p>
+            <p class="mb-5 text-xl font-medium max-w-2xl">Packed with practical exercises, creative prompts, case studies, and expert insights, this book will help you:</p>
+            <ul class="list-disc list-outside pl-5 space-y-2">
+              <li>Understand the basics of screenwriting</li>
+              <li>Find the emotional core of your novel</li>
+              <li>Choose the right format—film or TV—and shape your story accordingly</li>
+              <li>Translate prose into compelling scenes and visual storytelling</li>
+              <li>Navigate rights, permissions, and professional pathways</li>
+            </ul>
+            
+            <a href="https://www.amazon.co.uk/Screen-Ready-Workbook-Adaptation-Writers-screenplays/dp/1917109504/ref=sr_1_1?crid=7812V3J5DLNI&dib=eyJ2IjoiMSJ9.NxJbbAG_Gfkfq4_UpGHxM1mPWMBRlwYZOAOtZPdLN2dDJBYfg5QfUtByX0DrGfGQnSvha4QjEJDJbK5eGgRsWdCEQOmFlUf2m7UVGRUyYTkriHKWL7nsZHRehSkjfzZ7U65_hLAx3huYESNYfiyYd4KB1rlSqkQ5Wb5pN2bS-Fe4TtEhEqxgh3rcPY5FKDmqRWJ8MbvgRTyvVHqbfXVr6ruH92iCq7RPJDf8hngQun0.3HPqS34yHVwG1uGkaU8YsRFWXNzKMaqGY8DM66za5CA&dib_tag=se&keywords=dan+bernard&qid=1745926040&sprefix=dan+bernard%2Caps%2C79&sr=8-1"
+              class="w-fit inline-flex items-center bg-amber-500 text-white px-6 py-3 mt-12 rounded-md hover:bg-amber-600 transition-colors" target="_blank">
+              <i class="fa-brands fa-amazon text-3xl"></i><span class="ml-2">Available to buy on Amazon</span>
+            </a>
+          </div>
+          <div class="sm:w-1/4">
+            <img src="images/screen-ready.jpg" class="w-full shadow-md">
           </div>
         </div>
       </div>

@@ -29,9 +29,9 @@
 
           <!-- Navigation menu - hidden by default on mobile -->
           <ul id="nav-menu" class="hidden sm:flex flex-col sm:flex-row absolute sm:relative right-0 top-8 sm:top-0 bg-white sm:bg-transparent shadow-lg sm:shadow-none rounded-lg sm:rounded-none p-4 sm:p-0 min-w-[280px] sm:min-w-0 sm:space-x-6 text-xs sm:text-lg">
-            <li class="mb-3 sm:mb-0"><a href="https://www.tricornbooks.co.uk/services/" class="text-lg text-gray-700 hover:text-gray-900 block sm:inline">Book Publishing</a></li>
-            <li class="mb-3 sm:mb-0"><a onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})" class="text-lg text-gray-700 hover:text-gray-900 cursor-pointer block sm:inline">Workbook</a></li>
             <li class="mb-3 sm:mb-0"><a onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})" class="text-lg text-gray-700 hover:text-gray-900 cursor-pointer block sm:inline">Pricing</a></li>
+            <li class="mb-3 sm:mb-0"><a onclick="document.getElementById('testimonials').scrollIntoView({behavior: 'smooth'})" class="text-lg text-gray-700 hover:text-gray-900 cursor-pointer block sm:inline">Testimonials</a></li>
+            <li class="mb-3 sm:mb-0"><a onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})" class="text-lg text-gray-700 hover:text-gray-900 cursor-pointer block sm:inline">Workbook</a></li>
             <li class="mb-3 sm:mb-0"><a href="/contact" class="text-lg text-gray-700 hover:text-gray-900 cursor-pointer block sm:inline">Contact</a></li>
           </ul>
         </nav>
@@ -53,8 +53,12 @@
                 We specialise in converting novels, memoirs and non-fiction into screenplays ready for submission to film and TV Agents & Producers.
               </p>
               <a href="/contact"
-                class="w-fit inline-block bg-amber-500 text-white px-6 py-3 mt-12 rounded-md hover:bg-amber-600 transition-colors plausible-event-name=contact+button">
+                class="hidden lg:inline-block w-fit bg-amber-500 text-white px-6 py-3 mt-12 rounded-md hover:bg-amber-600 transition-colors plausible-event-name=contact+button">
                 <i class="fa fa-envelope mr-2"></i>Contact Us
+              </a>
+              <a href="#enquiries" onclick="event.preventDefault(); document.getElementById('enquiries').scrollIntoView({behavior: 'smooth'})" 
+                class="inline-block lg:hidden w-fit bg-indigo-500 text-white px-6 py-3 mt-12 rounded-md hover:bg-indigo-600 transition-colors">
+                <i class="fa fa-lightbulb mr-2"></i>Learn more
               </a>
             </div>
           </div>
@@ -193,7 +197,7 @@
         </div>
       </div>
 
-      <div class="px-8 py-12 sm:py-24 items-center justify-center text-[#3B3A47] bg-slate-300">
+      <div class="px-8 py-12 sm:py-24 items-center justify-center text-[#3B3A47] bg-slate-300" id="testimonials">
         <div class="container mx-auto max-w-screen-xl">
           <h2 class="max-w-xl text-5xl font-medium mb-8">Testimonials</h2>
           <div class="flex flex-col sm:flex-row gap-8">
